@@ -1,29 +1,53 @@
-- # 联系方式
-  - 手机：18664605062
+- ## 联系方式
+  - 手机：17688758629
   - Email：loshine1992@gmail.com or 283946709@qq.com
   - QQ：283946709 （添加好友时请注明招聘）
 
   ---
 
-  # 个人信息
+  ## 个人信息
 
   - 龙帅/男/1992 
   - 本科/长沙理工大学 
-  - 工作年限：3年
-  - 技术博客：https://loshine.xyz/
-  - GitHub：http://github.com/loshine
+  - 工作年限：5年
+  - 技术博客：https://loshine.blog/
+  - GitHub：https://github.com/loshine
 
   - 期望职位：Android工程师、移动端工程师
-  - 期望薪资：税前月薪15k~25k
+  - 期望薪资：税前月薪25k~30k
   - 期望城市：上海
+  - 额外技能：rxjava, kotlin, flutter
 
   ---
 
-# 工作经历
+## 工作经历
 
-## 上海南花科技有限公司 （ 2017年5月 ~ 至今 ）
+### 上海厚翰科技有限公司 （ 2018年8月 ~ 至今）
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fpeth803xpj30ih0ihtd3.jpg)
+App 下载地址：
+
+- Score: https://android.myapp.com/myapp/detail.htm?apkName=com.famulei.famulei
+- We俱乐部: https://android.myapp.com/myapp/detail.htm?apkName=com.famulei.we
+- iG俱乐部：https://android.myapp.com/myapp/detail.htm?apkName=com.famulei.ig
+- OMG俱乐部：https://android.myapp.com/myapp/detail.htm?apkName=com.famulei.omg
+- LNG俱乐部：https://android.myapp.com/myapp/detail.htm?apkName=com.famulei.snake
+- 天霸电竞：http://zhushou.360.cn/detail/index/soft_id/4121841?recrefer=SE_D_%E5%A4%A9%E9%9C%B8%E7%94%B5%E7%AB%9E
+
+Score 是电竞爱好者的粉丝社区，App 里提供了专业的英雄联盟、王者荣耀赛事数据，还可以在 App 里和同好一起观看赛事直播或赛事文字直播。
+
+本人进入该公司时属于公司业务发展期，进入公司后本人组织了 Score 主版本和其它俱乐部单行版（WE俱乐部、iG俱乐部、OMG俱乐部、LNG俱乐部、滔博电竞、天霸电竞）的版本合并，使用`productFlavor`来管理不同单行版。
+
+同时本人负责了项目架构改进，由传统的 MVC 架构调整为了较为容易学习使用的 MVP 架构，并引入了流行库如：Retrofit、RxJava 等。
+
+后续本人和公司运维合作，使用 Jenkins 配合 Gradle 脚本实现了自动化打测试包，减少了开发人员的无效工作。后续使用 Gradle 脚本配合 360 加固实现了一键打包加固，大大减少了重复工作量，后续本人负责了Android发包工作，熟悉了国内绝大多数市场发包流程。
+
+工作期间负责了多个模块的业务和代码重构，大幅提高了客户端稳定性，修复了多处隐藏的 bug 和逻辑漏洞。完全重构了发布贴子、文章页面，阅读贴子、文章页面以及赛事详情页面，优化了列表性能，提升了页面滚动流畅性。
+
+在2019年引入了Kotlin技术栈，并实践Kotlin编码至今。
+
+### 上海南花科技有限公司 （ 2017年5月 ~ 2018年7月 ）
+
+![](https://s2.ax1x.com/2020/02/11/1TReVs.png)
 
 职通车是基层岗位求职招聘服务平台，求职者和企业 HR 可以发送工作相关消息，直接聊天，火速入职。
 
@@ -43,9 +67,9 @@ ui 层使用 MVVM 模式构建，将传统的集 View 和 Controller 为一体�
 
 在内网搭建了 Jenkins 服务并部署了 Android 自动打包程序，在 github 上成功 push 代码之后触发 build，并在 build 成功之后发送邮件通知相关人员。失败之后将会发送错误日志到 Android 开发人员的邮箱。
 
-## 深圳华海乐盈网络科技有限公司 （ 2015年12月 ~ 2017年5月 ）
+### 深圳华海乐盈网络科技有限公司 （ 2014年10月 ~ 2017年5月 ）
 
-### 球苗社区客户端
+#### 球苗社区客户端
 
 ![](http://ww3.sinaimg.cn/large/0060lm7Tgy1fctbaujf86j314h0hsq9s.jpg)
 
@@ -67,7 +91,7 @@ UI 部分大量使用 Fragment，并使用 Databinding 实现数据绑定，减�
 
 开发了 RTMP 直播推流和播放功能，接入腾讯云直播 sdk，能够顺利推流和播放。
 
-### 一比分
+#### 一比分
 
 ![](http://ww1.sinaimg.cn/large/0060lm7Tgy1fctb51frh5j314e0hsq92.jpg)
 
@@ -81,7 +105,7 @@ UI 部分大量使用 Fragment，并使用 Databinding 实现数据绑定，减�
 
 重构了篮球内页亚盘、欧赔、大小模块，渲染更迅速滑动更顺畅。
 
-### 一比分 Material Design 版
+#### 一比分 Material Design 版
 
 ![](http://ww2.sinaimg.cn/large/0060lm7Tgy1fctb0h0hexj314h0hsafx.jpg)
 
@@ -89,42 +113,15 @@ UI 部分大量使用 Fragment，并使用 Databinding 实现数据绑定，减�
 
 大量使用了 design 库的控件以及 CoordinatorLayout 与 Behavior 的使用，使用 github 上的兼容库实现了设置界面的低版本 Material 兼容。
 
-## 武汉申氏传媒有限公司 （ 2014年10月 ~ 2015年11月 ）
+## 开源项目和作品
 
-### 众豆网 Android 客户端、众豆网后端
+### 开源项目
 
-![](http://ww1.sinaimg.cn/large/0060lm7Tgy1fctaokt8sej30ue0hqqfc.jpg)
-
-本项目是独立开发，由于项目需要快速开发快速迭代所以使用了 Android Annotations 框架。使用了 Retrofit + Fastjson + OkHttp 进行网络访问，由于 Retrofit 没有 fastjson 的 adapter，于是自己参照 GsonAdapter 自行实现了一个 FastjsonAdapter。
-
-MainActivity 采用 Fragment + RadioGroup 的方式实现，项目使用 MVC 架构，用户登录 token 缓存在 SharedPreferences 中以保证移动端 always online。
-
-由于公司后端开发人手不足，所以在此期间也参与了后端的开发，使用 Spring、Spring MVC、Mybatis 进行开发，API 使用了 Restful 风格。
-
-在此期间也学习了 MySQL 的使用和 SQL 语句的编写，Spring MVC 以及 Spring 依赖注入，并理解了 IOC、AOP 的含义。能够熟练使用 SSI 框架进行 Web 开发。
-
-# 其它项目经验
-
-在业余时间参与了深圳大学大数据技术与应用研究所的项目，参与了其跨平台应用的开发。
-
-## mekongchat
-
-深圳大学大数据技术与应用研究所基于其 app-hybrid-core 开发的一款即时通讯项目，主要负责接入环信 SDK 并提供给 hybrid 调用的接口。
-
-# 开源项目和作品
-
-## 开源项目
-- [retrofit_fastjson_converter](https://github.com/loshine/retrofit_fastjson_converter)：一个 fastjson 的 retrofit convertor factory
+- [flutter-nga](https://github.com/loshine/flutter-nga)：艾泽拉斯国家地理论坛 flutter 实现版，还在开发中
+- [flutter-todo](https://github.com/loshine/flutter-todo)：一个学习 flutter 的 To-do 项目
 - [GalleryPicker](https://github.com/loshine/GalleryPicker)：仿微信图片选择器的实现
 
-## 技术文章
-
-- [Android开发最佳实践——1.接口设计](https://loshine.me/2016/09/01/android-best-practice-p1-interface-design/)
-- [Android开发最佳实践——2.使用Kotlin开发Android](https://loshine.me/2016/09/06/android-best-practice-p2-language/)
-- [Android开发最佳实践——3.项目架构篇](https://loshine.me/2016/11/17/android-best-practice-p3-project-architechture/)
-- [Android开发最佳实践——4.Repository 层实现](https://loshine.me/2017/01/21/android-best-practice-p4-repository/)
-
-# 技能清单
+## 技能清单
 
 以下均为我熟练使用的技能
 
@@ -132,18 +129,20 @@ MainActivity 采用 Fragment + RadioGroup 的方式实现，项目使用 MVC 架
 - 单元测试：JUnit/Mockito/Robolectric
 - 直播: RTMP 推流/播放
 
-## 参考技能关键字
+### 参考技能关键字
 
 - android
-- rxjava
 - java
+- rxjava
 - kotlin
+- flutter
+- dart
 - javascript
 - git
 - sql
 
 ---
 
-# 致谢
+## 致谢
 
 感谢您花时间阅读我的简历，期待能有机会和您共事。
