@@ -9,20 +9,40 @@
 
   - 龙帅/男/1992 
   - 本科/长沙理工大学 
-  - 工作年限：5年
-  - 技术博客：https://loshine.blog/
+  - 工作年限：10年
+  - 技术博客：https://loshine.github.io/
   - GitHub：https://github.com/loshine
 
   - 期望职位：Android工程师、移动端工程师
-  - 期望薪资：税前月薪25k~30k
+  - 期望薪资：税前月薪30k~45k
   - 期望城市：上海
-  - 额外技能：rxjava, kotlin, flutter
+  - 额外技能：Rxjava, Kotlin, Flutter, Coroutines, Jetpack
 
   ---
 
 ## 工作经历
 
-### 上海厚翰科技有限公司 （ 2018年8月 ~ 至今）
+### 富乐康计算机（上海）有限公司 （ 2020年10月 ~ 至今 ）
+
+LiveFuller 是富乐医疗 (Fullerton Health) 为新加坡当地客户提供的在线医疗解决方案，客户可以通过 LiveFuller 进行预约，在线问诊，处方开药，诊所查询等操作。
+
+本人在职期间主导了 App 重构，使用 Flutter 框架，按业务拆分，使用模块化的思想完成了整体架构，降低了业务耦合度，并简化了开发和测试流程。
+
+为 LiveFuller Flutter 项目编写了大量第三方插件：设备日历操作，Smart Future 第三方蓝牙健康设备 sdk，原生通知，Android GMS/HMS 检测，Android GMS/HMS Location, Map, Push 等。
+
+LFDoctor 是提供给诊所医生的在线接诊软件，此项目使用 Jetpack Compose UI 重构了界面层，去除了停止维护的第三方库，大量替换为官方 Jetpack 库，降低了维护成本，大幅提升了开发效率（编译速度和编码效率）。
+
+### 随机漫步（上海）体育科技有限公司 （2020年4月 ~ 2020年10月）
+
+FREEBEAT 圆气健身是一款在线健身 App，用户可以使用它链接动感单车，蓝牙设备等观看在线课程并参与锻炼。
+
+使用 Gradle 自定义插件和 ASM 字节码插桩技术，为公司实现了一套全埋点框架，使用注解可以静态或动态注入埋点统计参数。
+
+优化了低功耗蓝牙连接，使用数据库缓存连接过的设备减少再次使用时的查找过程，优化用户连接流程。
+
+参考 UI 设计绘制了大量自定义 UI 和动画效果。
+
+### 上海厚翰科技有限公司 （ 2018年8月 ~ 2020年2月 ）
 
 App 下载地址：
 
@@ -43,7 +63,7 @@ Score 是电竞爱好者的粉丝社区，App 里提供了专业的英雄联盟�
 
 工作期间负责了多个模块的业务和代码重构，大幅提高了客户端稳定性，修复了多处隐藏的 bug 和逻辑漏洞。完全重构了发布贴子、文章页面，阅读贴子、文章页面以及赛事详情页面，优化了列表性能，提升了页面滚动流畅性。
 
-在2019年引入了Kotlin技术栈，并实践Kotlin编码至今。
+在2019年引入了 Kotlin 技术栈，并实践 Kotlin 编码至今。
 
 ### 上海南花科技有限公司 （ 2017年5月 ~ 2018年7月 ）
 
@@ -117,9 +137,8 @@ UI 部分大量使用 Fragment，并使用 Databinding 实现数据绑定，减�
 
 ### 开源项目
 
-- [flutter-nga](https://github.com/loshine/flutter-nga)：艾泽拉斯国家地理论坛 flutter 实现版，还在开发中
+- [flutter-nga](https://github.com/loshine/flutter-nga)：艾泽拉斯国家地理论坛 flutter 实现版，已停止维护
 - [flutter-todo](https://github.com/loshine/flutter-todo)：一个学习 flutter 的 To-do 项目
-- [GalleryPicker](https://github.com/loshine/GalleryPicker)：仿微信图片选择器的实现
 
 ## 技能清单
 
@@ -131,15 +150,16 @@ UI 部分大量使用 Fragment，并使用 Databinding 实现数据绑定，减�
 
 ### 参考技能关键字
 
-- android
-- java
-- rxjava
-- kotlin
-- flutter
-- dart
-- javascript
-- git
-- sql
+- Android
+- Java
+- Rxjava
+- Kotlin
+- Coroutines
+- Jetpack Compose
+- Flutter
+- Dart
+- Git
+- SQL
 
 ---
 
