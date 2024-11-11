@@ -32,6 +32,8 @@ LiveFuller 是富乐医疗 (Fullerton Health) 为新加坡当地客户提供的�
 
 LFDoctor 是提供给诊所医生的在线接诊软件，此项目使用 Jetpack Compose UI 重构了界面层，去除了停止维护的第三方库，大量替换为官方 Jetpack 库，降低了维护成本，大幅提升了开发效率（编译速度和编码效率）。
 
+![](https://i.imgur.com/9YVQYXq.png)
+
 ### 随机漫步（上海）体育科技有限公司 （2020年4月 ~ 2020年10月）
 
 FREEBEAT 圆气健身是一款在线健身 App，用户可以使用它链接动感单车，蓝牙设备等观看在线课程并参与锻炼。
