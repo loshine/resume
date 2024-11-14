@@ -26,11 +26,12 @@
 
 LiveFuller 是富乐医疗 (Fullerton Health) 为新加坡当地客户提供的在线医疗解决方案，客户可以通过 LiveFuller 进行预约，在线问诊，处方开药，诊所查询等操作。
 
-本人在职期间主导了 App 重构，使用 Flutter 框架，按业务拆分，使用模块化的思想完成了整体架构，降低了业务耦合度，并简化了开发和测试流程。
+本人在职期间主导了 LiveFuller App 从原生开发迁移到 Flutter 开发，共经历了三个阶段：
+1. 纯原生开发阶段，在此阶段本人将 LiveFuller 从 MVP 模式切换到 MVVM 模式，使用 Kotlin + ViewModel + Flow 解决了应用中可能存在的内存泄露问题，并将数据层使用 Repository 模式，使用 Retrofit 和 Room 重构了数据层。
+2. Flutter + 原生混合开发阶段，在这个阶段本人在 LiveFuller 应用中使用 Flutter 开发了一整个慢病管理模块，在此模块中实现了与原生的互跳转，与原生数据的同步，操作原生功能等。
+3. 使用 Flutter 重构 LiveFuller，这个阶段共计耗时 4 个月，并且与原生 App 是同步进行的，本人设计了 LiveFuller Flutter 应用的架构，采取了分模块开发的模式，将任务拆分给不同的人开发。采用 riverpod 实现状态管理和依赖注入，dio 获取接口数据，flutter_hooks 减少模板代码等。同时为此项目编写了第三方插件：设备日历操作，Smart Future 第三方蓝牙健康设备 sdk，原生通知，Android GMS/HMS 检测，Android GMS/HMS Location, Map, Push 等。
 
-为 LiveFuller Flutter 项目编写了大量第三方插件：设备日历操作，Smart Future 第三方蓝牙健康设备 sdk，原生通知，Android GMS/HMS 检测，Android GMS/HMS Location, Map, Push 等。
-
-LFDoctor 是提供给诊所医生的在线接诊软件，此项目使用 Jetpack Compose UI 重构了界面层，去除了停止维护的第三方库，大量替换为官方 Jetpack 库，降低了维护成本，大幅提升了开发效率（编译速度和编码效率）。
+LFDoctor 是提供给诊所医生的在线接诊软件，此项目使用 Jetpack Compose UI 重构了界面层，本人依照 UI 设计的规范实现了该项目主题和主题下的控件库，去除了由于历史原因引入，后续停止维护的第三方库，大量替换为官方 Jetpack 库，降低了维护成本，大幅提升了开发效率（编译速度和编码效率）。
 
 ![](https://i.imgur.com/9YVQYXq.png)
 
