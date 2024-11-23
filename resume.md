@@ -26,12 +26,13 @@
 
 LiveFuller 是富乐医疗 (Fullerton Health) 为新加坡当地客户提供的在线医疗解决方案，客户可以通过 LiveFuller 进行预约，在线问诊，处方开药，诊所查询等操作。
 
-本人在职期间主导了 LiveFuller App 从原生开发迁移到 Flutter 开发，共经历了三个阶段：
-1. 纯原生开发阶段，在此阶段本人将 LiveFuller 从 MVP 模式切换到 MVVM 模式，使用 Kotlin + ViewModel + Flow 解决了应用中可能存在的内存泄露问题，并将数据层使用 Repository 模式，使用 Retrofit 和 Room 重构了数据层。
-2. Flutter + 原生混合开发阶段，在这个阶段本人在 LiveFuller 应用中使用 Flutter 开发了一整个慢病管理模块，在此模块中实现了与原生的互跳转，与原生数据的同步，操作原生功能等。
-3. 使用 Flutter 重构 LiveFuller，这个阶段共计耗时 4 个月，并且与原生 App 是同步进行的，本人设计了 LiveFuller Flutter 应用的架构，采取了分模块开发的模式，将任务拆分给不同的人开发。采用 riverpod 实现状态管理和依赖注入，dio 获取接口数据，flutter_hooks 减少模板代码等。同时为此项目编写了第三方插件：设备日历操作，Smart Future 第三方蓝牙健康设备 sdk，原生通知，Android GMS/HMS 检测，Android GMS/HMS Location, Map, Push 等。
+本人入职后主导了 LiveFuller App 三次较大的技术栈变化：
 
-LFDoctor 是提供给诊所医生的在线接诊软件，此项目使用 Jetpack Compose UI 重构了界面层，本人依照 UI 设计的规范实现了该项目主题和主题下的控件库，去除了由于历史原因引入，后续停止维护的第三方库，大量替换为官方 Jetpack 库，降低了维护成本，大幅提升了开发效率（编译速度和编码效率）。
+1. 从 Java MVP 迁移到 Kotlin MVVM，此阶段中本人参考现代化的 Kotlin Android 应用架构，设计了 MVVM 模式 + Repository 模式数据层的现代化 Android 应用，将 ARouter 多 Activity 跳转迁移到了按模块划分 Activity，模块内使用 Fragment 和 Jetpack Navigation 的路由方式。使用 Room 和 Retrofit 进行持久化存储和远程 API 访问，自定义 Interceptor 实现API鉴权等，此阶段主要解决 App 的技术债务，并引入流行的技术栈。
+2. 尝试说服领导层使用 Flutter 来节约开发成本，并验证其可能性。该阶段本人在 LiveFuller App 内引入了 Flutter，使用 Flutter 引擎完成了业务较为独立的慢病管理模块的开发，在此阶段验证了其自定义UI和动画的便捷性、和原生互操作的能力、页面流畅不卡顿、并在开发速度上拥有一定的优势，在此阶段也解决了譬如原生和Flutter模块间数据同步的问题，原生和Flutter互跳转的问题，以及Flutter和原生互操作等问题。
+3. 完全使用 Flutter 重构 LiveFuller，此阶段本人作为主开发和架构，设计了 LiveFuller Flutter 的架构，对业务模块进行了拆分，使用 Git 按模块开发的方式拆分业务和任务，使用 Riverpod 进行状态管理、dio 获取接口数据、flutter_hooks减少模板代码等。同时引入了stripe支付、fcm和hms(按手机品牌确定使用什么服务)、原生通知、Healthkit、Callkit 等插件和第三方库，并自行开发了如系统日历事件、Smart Future健康设备、android 通知、firebase 和 huawei 推送兼容库等第三方插件和库。该阶段使用四个月时间敏捷开发的模式，同时和原生应用并行，最终成功推进上线。
+
+LFDoctor 是提供给诊所医生的在线接诊软件，此项目应用了 Jetpack Compose UI 重构界面层，将原项目中停止维护的 Android Router 库移除，大幅提升了项目的编译效率，并成功从命令式 UI 切换到了响应式 UI。项目数据层使用 Retrofit、Kotlin Serialization、Kotlin Coroutines、ViewModel、Flow、Coil、Room 等现代化库构建，使用 CompositionLocalProvider 实现了公司内部规范的主题以及控件，并接入了含RTC、IM、Firebase 等多项第三方服务，为医生提供了稳定、便捷的接诊和处方、发票开具方式。
 
 ![](https://i.imgur.com/9YVQYXq.png)
 
